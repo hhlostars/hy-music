@@ -12,8 +12,8 @@ const HYSongsCover = memo((props) => {
     <SongsCoverWrapper>
       <div className="cover-top">
         <img src={getSizeImage(info.picUrl, 140)} alt="" />
-        <div className="cover sprite_covor">
-          <div className="info sprite_covor">
+        <div className="cover sprite_cover">
+          <div className="info sprite_cover">
             <span>
               <i className="sprite_icon erji"></i>
               {getCount(info.playCount)}
@@ -22,8 +22,8 @@ const HYSongsCover = memo((props) => {
           </div>
         </div>
       </div>
-      <div className="cover-bottom text-nowrap">
-        <a href="">{info.name}</a>
+      <div className="cover-bottom">
+        <a href="" title={info.name}>{info.name}</a>
       </div>
     </SongsCoverWrapper>
   )

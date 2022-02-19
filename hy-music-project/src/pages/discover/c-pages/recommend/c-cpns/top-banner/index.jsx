@@ -2,6 +2,7 @@ import React, { memo, useEffect, useState, useCallback, useRef } from 'react'
 import { useDispatch, useSelector, shallowEqual } from 'react-redux'
 import { getTopBannerAction } from '../../store/acitonCreators'
 
+
 import { Carousel } from 'antd';
 import {
   BannerWrapper,

@@ -31,7 +31,7 @@ const HYThemeHeaderRCM = memo((props) => {
       </div>
       <div className="right">
         <a href="todo">更多</a>
-        <i className='icon sprite-02'></i>
+        <i className='icon sprite_02'></i>
       </div>
     </HeaderWrapper>
   )

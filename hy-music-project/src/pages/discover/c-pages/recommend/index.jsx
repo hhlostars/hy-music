@@ -5,6 +5,8 @@ import HyTopBanner from './c-cpns/top-banner'
 import HYHotRecommend from './c-cpns/hot-recommend'
 import HYNewAlbum from './c-cpns/new-album'
 import HYRMCTopList from './c-cpns/rec-toplist'
+import HYSettleSinger from './c-cpns/settle-singer'
+import HYHotRadio from './c-cpns/hot-radio'
 
 import {
   RecommendWrapper,
@@ -28,7 +30,8 @@ const HYRecommend = memo((props) => {
           <HYRMCTopList></HYRMCTopList>
         </RecommendLeft>
         <RecommendRight>
-          right
+          <HYSettleSinger ></HYSettleSinger>
+          <HYHotRadio></HYHotRadio>
         </RecommendRight>
       </Content>
     </RecommendWrapper>

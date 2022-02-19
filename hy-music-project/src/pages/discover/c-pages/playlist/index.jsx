@@ -1,9 +1,24 @@
-import React, { memo } from 'react'
+import React, { useEffect, memo } from 'react'
+import { useDispatch } from 'react-redux'
 
-const playlist = memo(() => {
+import { getCategory } from './store/actionCreators'
+import { SongsWrapper } from './style'
+
+import HYPlayListHeader from './c-cpns/header'
+import List from './c-cpns/list'
+
+const HYPlayList = memo(() => {
+  // useEffect()
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(getCategory())
+  }, [dispatch])
   return (
-    <div>playlist</div>
+    <SongsWrapper className="wrap-v2">
+      <HYPlayListHeader></HYPlayListHeader>
+      <List></List>
+    </SongsWrapper>
   )
 })
 
-export default playlist
+export default HYPlayList

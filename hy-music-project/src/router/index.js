@@ -10,6 +10,9 @@ const DjRadio = React.lazy(() => import('../pages/discover/c-pages/djradio'))
 const PlayList = React.lazy(() => import('../pages/discover/c-pages/playlist'))
 const Recommend = React.lazy(() => import('../pages/discover/c-pages/recommend'))
 const TopList = React.lazy(() => import('../pages/discover/c-pages/toplist'))
+
+const TopBody = React.lazy(() => import('../pages/discover/c-pages/toplist/c-cpns/top-body'))
+
 const routers = [
   {
     path: '/',
@@ -59,6 +62,28 @@ const routers = [
             <TopList />
           </React.Suspense>
         ),
+        children: [
+          {
+            // 仅匹配到父级路由时
+            // index路由 默认展示的
+            index: true,
+            name: '飙升榜',
+            element: (
+              <React.Suspense fallback={<>加载中...</>}>
+                <Navigate to="/discover/toplist/19723756" state='每天更新'/>
+              </React.Suspense>
+            ),
+          },
+          {
+            path: ':id',
+            name: '排行榜',
+            element: (
+              <React.Suspense fallback={<h1>加载中...</h1>}>
+                <TopBody />
+              </React.Suspense>
+            ),
+          },
+        ]
       },
       {
         path: 'playlist',

@@ -55,6 +55,16 @@ export const SongsCoverWrapper = styled.div`
     font-size: 14px;
     color: #000;
     margin-top: 5px;
+    /* white-space: nowrap; */
+    /* -webkit-line-clamp: 2; */
+    a {
+      /* white-space: nowrap; */
+      /* -webkit-line-clamp: 2; */
+         /* 文本需要显示多少行 */
+      /* font-size: 14px; */
+      color: #000;
+      
+    }
   }
 
   .cover-source {
