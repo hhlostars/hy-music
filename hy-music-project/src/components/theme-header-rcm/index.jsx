@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import {
   HeaderWrapper
 } from './style'
-import HYHotRecommend from '../../pages/discover/c-pages/recommend/c-cpns/hot-recommend'
+// import HYHotRecommend from '../../pages/discover/c-pages/recommend/c-cpns/hot-recommend'
 
 const HYThemeHeaderRCM = memo((props) => {
   // const { title, keywords = []} = props

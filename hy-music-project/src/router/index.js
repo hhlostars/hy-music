@@ -1,17 +1,35 @@
-import React from 'react'
+import React, {} from 'react'
 import { useRoutes, Navigate } from 'react-router-dom'
 
-const HyDiscover = React.lazy(() => import('../pages/discover'))
-const HyMy = React.lazy(() => import('../pages/my'))
-const HyFriend = React.lazy(() => import('../pages/friend'))
-const Album = React.lazy(() => import('../pages/discover/c-pages/album'))
-const Artist = React.lazy(() => import('../pages/discover/c-pages/artist'))
-const DjRadio = React.lazy(() => import('../pages/discover/c-pages/djradio'))
-const PlayList = React.lazy(() => import('../pages/discover/c-pages/playlist'))
-const Recommend = React.lazy(() => import('../pages/discover/c-pages/recommend'))
-const TopList = React.lazy(() => import('../pages/discover/c-pages/toplist'))
+// const HyDiscover = React.lazy(() => import('../pages/discover'))
+import  HyDiscover from '../pages/discover'
 
-const TopBody = React.lazy(() => import('../pages/discover/c-pages/toplist/c-cpns/top-body'))
+// const HyMy = React.lazy(() => import('../pages/my'))
+import HyMy from '../pages/my'
+
+// const HyFriend = React.lazy(() => import('../pages/friend'))
+import HyFriend from '../pages/friend'
+
+// const Album = React.lazy(() => import('../pages/discover/c-pages/album'))
+import Album from '../pages/discover/c-pages/album'
+
+// const Artist = React.lazy(() => import('../pages/discover/c-pages/artist'))
+import Artist from '../pages/discover/c-pages/artist'
+
+// const DjRadio = React.lazy(() => import('../pages/discover/c-pages/djradio'))
+import DjRadio from '../pages/discover/c-pages/djradio'
+
+// const PlayList = React.lazy(() => import('../pages/discover/c-pages/playlist'))
+import PlayList from '../pages/discover/c-pages/playlist'
+
+// const Recommend = React.lazy(() => import('../pages/discover/c-pages/recommend'))
+import Recommend from '../pages/discover/c-pages/recommend'
+
+// const TopList = React.lazy(() => import('../pages/discover/c-pages/toplist'))
+import TopList from '../pages/discover/c-pages/toplist'
+
+// const TopBody = React.lazy(() => import('../pages/discover/c-pages/toplist/c-cpns/top-body'))
+import TopBody from '../pages/discover/c-pages/toplist/c-cpns/top-body'
 
 const routers = [
   {

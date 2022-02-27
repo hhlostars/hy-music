@@ -1,4 +1,4 @@
-import React, { useState, useEffect, memo } from 'react'
+import React, { useEffect, memo } from 'react'
 import { useSelector, useDispatch, shallowEqual } from 'react-redux'
 
 import { getRadios } from '../../store/actionCreators'

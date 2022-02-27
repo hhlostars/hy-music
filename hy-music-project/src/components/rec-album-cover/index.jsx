@@ -17,10 +17,10 @@ const recAlbumCover = memo((props) => {
       </div>
       <div className="album-info">
         <div className="name text-nowrap">
-          <a href="">{info.name}</a>
+          <a href="/aa">{info.name}</a>
         </div>
         <div className="artist text-nowrap">
-          <a href="">{info.artist.name}</a>
+          <a href="/aa">{info.artist.name}</a>
         </div>
       </div>
     </AlbumWrapper>

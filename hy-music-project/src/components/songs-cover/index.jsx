@@ -23,7 +23,7 @@ const HYSongsCover = memo((props) => {
         </div>
       </div>
       <div className="cover-bottom">
-        <a href="" title={info.name}>{info.name}</a>
+        <a href="/aa" title={info.name}>{info.name}</a>
       </div>
     </SongsCoverWrapper>
   )
